@@ -1,0 +1,688 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+:root {
+    --blue: #398FFB;
+    --red: #FC4640;
+    --yellow: #E2FF39;
+    --purpule: #433856;
+    --normal: 'Noto Sans', sans-serif;;
+    --bold:   'Noto Sans Bold 700', sans-serif;;
+    --gray: #3F3F3F;
+    --grayFull: #EBEBEB;
+    --general:#3D3D3D;
+    --greem:#06A43F;
+  }
+
+body {
+     font-weight: 300!important;
+     font-size: 15px!important;
+     line-height: 1.7!important;
+     min-height: auto;
+     font-family: var(--normal) !important;
+     color: #F5FF00;
+     margin: 0px;
+ }
+ container {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+a{
+    cursor: pointer;
+}
+
+p{
+    margin: 0vw !important;
+}
+strong{
+    font-weight: 700;
+}
+button{
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+vi{
+    width: 0vw;
+    height: 0vw;
+    position: sticky;
+    border: solid;
+    font-size: 1vw;
+    border-radius: 8vw;
+    float: left;
+    margin-top: 0.5vw;
+    margin-bottom: 0vw;
+    color: #f0f8ffeb;
+    margin-right: 1vw;
+}
+.txt-yellow{
+    color: var(--yellow);
+}
+.txt-purpule{
+    color: var(--purpule);
+}
+.txt-red{
+    color: var(--red) !important;
+}
+.btn-yellow{
+    background: var(--yellow);
+    width: 12vw;
+    font-size: 1vw;
+    height: 4vw;
+    margin: auto;
+}
+.btn-red{
+    width: 17vw;
+    height: 4.5vw;
+    border-radius: 0.8vw;
+    background: var(--red);
+    color: var(--yellow);
+    font-size: 1.5vw;
+}
+.btn-purpule{
+    width: 35vw;
+    height: 4.5vw;
+    border-radius: 0.8vw;
+    background: var(--purpule);
+    color: var(--yellow);
+    font-size: 2vw;
+    margin: auto;
+    font-family: var(--normal);
+}
+.back-greem{
+  background-color: var(--greem) !important;
+}
+.first{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vw;
+    z-index: 0;
+}
+.principal{    
+    z-index: 2 !important;
+    background: none !important;
+    opacity: inherit !important;
+}
+
+
+nav{
+    display: flex !important;
+    padding: 1vw;
+    width: 100%;
+    height: 5.5vw;
+    background: #6B1DE2 0% 0% no-repeat padding-box;
+    box-shadow: 0px 5px 10px #00000029;
+    position: absolute !important;
+    z-index: 1 !important;
+    text-decoration: none;
+    z-index: 1;
+}
+nav m{
+    margin-right: 48vw;  
+}
+
+i img{
+    width: 8vw;
+    height: 4vw;
+    margin-right: 20vw;
+    margin-left: 7vw;
+    margin-top: 0.7vw;
+    position: absolute;
+    z-index: 2;
+}
+
+nav a{
+    margin-left: 3vw;
+    margin-top: 1vw;
+    font-size: 1.2vw;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+nav b{
+    font-size: 1.2vw;
+    font-weight: 700;
+}
+
+nav p{
+    color: #FFFFFF;
+}
+
+.principal button{    
+    width: 16vw;
+    text-align: center;
+    font: normal normal bold 2vw/2vw Noto Sans;
+    background-color: #6B1DE2;
+    color: #fafafa;
+    border: 0.1vw solid #FFFFFF;
+    margin-left: 3vw;
+    border-radius: 0.4vw;
+}
+
+.img-principal{
+    width: 100vw!important;    
+    height: 50vw; 
+}
+
+.video-principal{
+    margin-top: -4.2vw;
+    width: 100vw!important;    
+    height: 50vw;
+}
+
+.active{
+    opacity: 4 !important;
+    }
+    strong{
+        font-weight: 47.5vw !important;
+}
+
+
+img {
+  max-width: 100%;
+}
+
+
+.first h4{
+    position: absolute;
+    text-align: left;
+    font: normal normal bold 10vw/20vw Noto Sans;
+    color: #00FBC2;
+    margin-top: -40vw;
+    margin-left: 9vw;
+}
+
+.first h3{
+    position: absolute;
+    text-align: left;
+    font: normal normal bold 7vw/14vw Noto Sans;
+    color: #00FBC2;
+    margin-top: -29vw;
+    margin-left: 9vw;
+}
+
+.first h2{
+    position: absolute;
+    text-align: left;
+    font: normal normal normal 2.5vw/4vw Noto Sans;
+    color: #F7F7F7;
+    margin-left: 9vw;
+    opacity: 0.75;
+    white-space: nowrap;
+}
+
+.first l{
+    position: absolute;
+    margin-top: -18.5vw;   
+}
+
+.first l2{
+    position: absolute;
+    margin-top: -15.5vw;   
+}
+
+.first l3{
+    position: absolute;
+    margin-top: -12.5vw;   
+}
+
+.first .btn button{
+    position: absolute;
+    text-align: center;
+    font: normal normal bold 2vw/4vw Noto Sans;
+    background-color: #6B1DE2;
+    color: #fafafa;
+    border-radius: 0.6vw;
+    margin-left: 9vw;
+    margin-top: -9.5vw; 
+    z-index: 1;
+}
+
+.second{
+    height: 50vw;
+    z-index: 0;
+}
+
+.second h3{
+    background-color: #00FBC2;
+    width: 30vw;
+    text-align: left;
+    font: normal normal bold 2vw/4vw Noto Sans;
+    color: #6B1DE2;
+    text-transform: uppercase;
+    z-index: 1;
+    padding-left: 8vw;
+    border-bottom-right-radius: 1.5vw;
+    border-top-right-radius: 1.5vw;
+}
+
+.second h4, .third h3, .fifth h3{
+    margin-left: 8vw;
+    text-align: left;
+    font: normal normal bold 2vw/4vw Noto Sans;
+    color: #6B1DE2;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.second h4{
+    margin-top: 2vw;
+}
+
+.second p{
+    margin-left: 8vw;
+    text-align: left;
+    font: normal normal normal 1.8vw/1vw Noto Sans;
+    color: #6B1DE2;;
+    opacity: 1;
+    margin: 2vw 9vw !important;
+    line-height: 0.2vw;
+}
+.second img{
+    margin-left: 8vw;
+    position: absolute;
+    width: 90vw!important;
+    height: 48vw; 
+    padding-left: 30vw;
+    padding-top: 3vw;
+}
+
+.third{
+    height: 42vw;
+    background-color: #F7F7F7;
+    z-index: 0;
+    text-align: center;
+}
+
+.third p{
+    font: normal normal 2.5vw/5vw Noto Sans;
+    color: #4E4E4E;
+    opacity: 1;
+    line-height: 3vw;
+}
+
+.third h3{
+    padding-top: 4vw;
+    margin-left: 8vw;
+}
+
+.third h4{
+    font: normal normal bold 3vw/6vw Noto Sans;
+    color: #6B1DE2;
+    width: 54vw; 
+    z-index: 1;
+    background-color: #00FBC2;
+    text-align: center;
+    border-radius: 0.8vw;    
+    margin-top: 1vw;
+}
+
+.third h{
+    color: #6B1DE2;   
+}
+
+.fourth{
+    height: 35vw;
+    z-index: 0;
+}
+
+.fourth .img-1{
+    position: absolute;
+    width: 100%!important;
+    height: 30vw; 
+}
+
+.fourth .img-2{
+    position: absolute;
+    width: 12vw!important;
+    height: 6vw; 
+    margin-left: 16vw;
+    margin-top: 5vw;
+}
+
+.fourth .img-3{
+    position: absolute;
+    width: 3.5vw!important;
+    height: 3.5vw; 
+    margin-left: 6vw;
+    margin-top: 26vw;
+}
+
+.fourth h2{
+    font: normal normal bold 1.5vw/3vw Noto Sans;
+    color: #7C7C7C;
+    z-index: 1;
+    text-align: center;
+    position: absolute;
+    margin-top: 11vw;
+    margin-left: 8vw;
+}
+
+.box{
+    position: absolute;
+    height: 18vw;
+    width: 40vw;;
+    background-color: #00FBC2;
+    z-index: 0;
+    border-radius: 0.5vw;
+    margin-top: 15vw;
+    margin-left: 3vw;
+}
+
+.fourth h3{
+    font: normal normal bold 2vw/4vw Noto Sans;
+    color: #5D5D5D;
+    z-index: 1;
+    text-align: center;
+    margin-top: -3vw;
+    margin-left: 4vw;
+    position: absolute;
+}
+
+.fourth h4{
+    font: normal normal bold 3.5vw/7vw Noto Sans;
+    color: #6B1DE2;
+    z-index: 1;
+    text-align: center;
+    margin-top: 1vw;
+}
+
+.fourth button{
+    position: absolute;
+    font: normal normal bold 2.5vw/5vw Noto Sans;
+    padding-right: 1.5vw;
+    color: #6B1DE2;
+    width: 35vw;
+    margin-left: 3vw;
+    background-color: #F7F7F7;
+    margin-top: 25vw;
+    margin-left: 5vw;
+    text-align: right;
+    border-radius: 1.5vw;
+}
+
+.fifth{
+    padding-left: 8vw;
+    height: 55.7vw;
+    z-index: 0;
+}
+
+.fifth .img-1{
+    position: absolute;
+    width: 28vw!important;
+    height: 54vw; 
+    margin-left: 55vw;
+    margin-top: -5vw;
+    z-index: 0;
+}
+
+.fifth .img-2{
+    position: absolute;
+    width: 24vw!important;
+    height: 10vw;
+}
+
+.fifth .img-3{
+    position: absolute;
+    width: 24vw!important;
+    height: 10vw; 
+    margin-left: 25vw;
+}
+
+.fifth .img-4{
+    position: absolute;
+    width: 24vw!important;
+    height: 10vw; 
+    margin-top: 2vw;
+}
+
+.fifth .texto{
+    color: #4E4E4E;
+    font: normal normal 1.5vw/3vw Noto Sans;
+    margin-top: 13vw;
+    line-height: 2vw;
+}
+
+.formulario{
+    width: 65vw;
+    height: 53vw;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0vw 0.5vw 0.5vw #0000001A;
+    border-radius: 0.5vw;
+    border-top: #380FA7 2vw solid;
+    position: absolute;
+    margin-top: -6vw;
+    margin-left: 17vw;
+    z-index: 1;
+    text-align: center;
+}
+
+.formulario h2{
+    font: normal normal bold 2vw/2vw Noto Sans;
+    margin-bottom: 3vw; 
+    color: #1A1A1A;  
+}
+
+.formulario .row{
+    display: flex;
+    margin-left: 0vw;
+    width:65vw;
+}
+
+.row input{
+    height: 4vw;
+    text-align: left;
+    font: normal normal 1.1vw/3vw Noto Sans;
+    z-index: 1;
+    border:#0000001A solid;
+    border-radius: 0.5vw;
+    color: #C4C4C4;
+    width: 23vw; 
+    margin: 1vw;
+    padding-left: 2vw;
+    margin-left: 6vw;
+}
+
+.row-2 input{
+    height: 4vw;
+    text-align: left;
+    font: normal normal 1.1vw/3vw Noto Sans;
+    z-index: 1;
+    border:#0000001A solid;
+    border-radius: 0.5vw;
+    color: #C4C4C4;
+    width: 53vw; 
+    margin: 1vw;
+    padding-left: 2vw;
+    margin-left: 1vw;
+}
+
+.row-3 input{
+    position: absolute;
+    height: 2vw;
+    width: 2vw;
+    border-radius: 1vw;
+    margin-left: -25vw;
+    margin-top: 3vw;
+}
+
+.row-3 h1{
+    position: absolute;
+    margin-left: 10vw;
+    margin-top: 3vw;
+    font: normal normal 0.9vw/1vw Noto Sans;
+    width: 26vw;
+    text-align: left;
+    color: #848484;
+}
+
+.row-3 button{
+    position: absolute;
+    text-align: center;
+    font: normal normal bold 1.5vw/3vw Noto Sans;
+    background-color: #F5D961;
+    color: #6B1DE2;
+    border-radius: 0.6vw;
+    margin-left: 6vw;
+    margin-top: 2vw; 
+    z-index: 1;
+    width: 20vw;
+}
+
+.font{
+    margin-top: 2.7vw;
+    background: #380FA7 0% 0% no-repeat padding-box;
+    height: 62vw;
+    z-index: 0;
+}
+
+.font nav{
+    width: 100%;
+    height: 6vw;
+    background: #FFFFFF;
+    margin-top: 50vw;
+    z-index: 0;
+    text-align: center;
+}
+
+.font h2{
+    position: absolute;
+    margin-top: 58vw;
+    font: normal normal bold 1.5vw/3vw Noto Sans;
+    padding-left: 44%;
+    color: #FFFFFF;
+    opacity: 0.3;
+}
+
+.font h1, .font h3, .font h4, .font h5, .font h6, .font h7{
+    margin-top: 51.5vw;
+    position:absolute;
+    z-index: 2;
+    width: 3vw;
+    height: 3vw;
+    background-color: #EAEAEA;
+    border-radius: 7vw !important;
+}
+
+.font h1{
+    margin-left: 37vw;
+}
+
+.font h3{
+    margin-left: 42vw;
+}
+
+.font h4{
+    margin-left: 47vw;
+}
+
+.font h5{
+    margin-left: 52vw;
+}
+
+.font h6{
+    margin-left: 57vw;
+}
+
+.font h7{
+    margin-left: 62vw;
+}
+
+
+.container-redes{
+    width: 100%;
+    position: fixed;
+    left: 94vw;
+    bottom: 0;   
+    z-index: 2;    
+}
+
+.facebook{
+    height: 6vw;
+    text-align: center;
+    width: 10%;
+    display: flex;
+    background: #FFFFFF;
+    border-radius: 1.58vw 0vw 0vw 1.58vw;
+    opacity: 1;
+    bottom: 0;
+    margin-left: -3vw;
+    margin-top: -35vw;
+    box-shadow: 0vw 0vw 0.4vw 0.01vw #3D3D3D;
+}
+
+.facebook a{
+    margin: auto;
+    display: flex;
+}
+
+.facebook img{
+    width: 5vw;
+    margin: auto;
+}
+
+
+.facebook img:hover{
+    width: 6vw;
+}
+
+.instagram{
+    height: 6vw;
+    text-align: center;
+    width: 10%;
+    display: flex;
+    background: #FFFFFF;
+    border-radius: 1.58vw 0vw 0vw 1.58vw;
+    opacity: 1;
+    bottom: 0;
+    margin-left: -3vw;
+    margin-top: 1vw;
+    box-shadow: 0vw 0vw 0.4vw 0.01vw #3D3D3D;
+}
+
+
+.instagram a{
+    margin: auto;
+    display: flex;
+}
+
+.instagram img{
+    width: 4vw;
+    margin: auto;
+}
+
+
+.instagram img:hover{
+    width: 5vw;
+}
+
+.whatsapp{
+    height: 6vw;
+    text-align: center;
+    width: 10%;
+    display: flex;
+    background: #FFFFFF;
+    border-radius: 1.58vw 0vw 0vw 1.58vw;
+    opacity: 1;
+    bottom: 0;
+    margin-left: -3vw;
+    margin-top: 1vw;
+    box-shadow: 0vw 0vw 0.4vw 0.01vw #3D3D3D;
+}
+
+
+.whatsapp a{
+    margin: auto;
+    display: flex;
+}
+
+.whatsapp img{
+    width: 4.5vw;
+    margin: auto;
+}
+
+
+.whatsapp img:hover{
+    width: 5.5vw;
+}

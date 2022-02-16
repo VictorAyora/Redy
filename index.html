@@ -1,0 +1,268 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+ <html lang="es">
+     
+    <head>
+        <link rel="stylesheet" href="public/css/main.css">
+        <title>Redy</title>
+        <link rel="icon" type="image/png" href="public/images/redy_b@2x.png" />
+        <link rel="stylesheet" href="images/fondo.png">
+
+        <meta name="viewport" content="width=device-width" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+        <link href="https://fonts.cdnfonts.com/css/bariol-bold" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/bariol-regular-2" rel="stylesheet">
+                
+
+    </head>
+
+    <script >
+        $(document).ready(function () {
+            console.log('entramos ready')
+            get_date();
+            $('#formulario').submit(function (e) {
+            console.log($("#formulario").serialize());
+            e.preventDefault();
+            var btnEnviar = $("#btnEnviar")
+            $.ajax({
+                type: "POST",
+                //url: "http://45.164.66.226:8086/affiliate/new",
+                url: 'https://academia.nodo.com.ec/ingles/new',
+                //url: 'http://localhost:3000/affiliate/new',
+                //data: ,
+                data: $("#formulario").serialize(),
+                beforeSend: function () {
+                    /*
+                    * Esta función se ejecuta durante el envió de la petición al
+                    * servidor.
+                    * */
+                    btnEnviar.text("Enviando");
+                    btnEnviar.attr("disabled", "disabled");
+                },
+                complete: function (data) {
+                    /*
+                    * Se ejecuta al termino de la petición
+                    * */
+                    btnEnviar.text("ENVIAR");
+                    btnEnviar.removeAttr("disabled");
+                },
+                success: function (data) {
+                    /*
+                    * Se ejecuta cuando termina la petición y esta ha sido
+                    * correcta
+                    * */
+                    console.log(data);
+                    btnEnviar.text("ENVIAR");
+                    alert('Registro Completado');
+                    
+                },
+                error: function (data) {
+                    /*
+                    * Se ejecuta si la peticón ha sido erronea
+                    * */
+                    alert("El correo ya se encuentra registrado");
+                    //$("#respuesta").html(data.body);
+                    btnEnviar.text("ENVIAR");
+                    console.log(data);
+
+                }
+            });
+        });
+        const audio = document.getElementById("audio");
+        const playPause = document.getElementById("play");
+
+        playPause.addEventListener("click", () => {
+        if (audio.paused || audio.ended) {
+            document.getElementById("play").innerHTML="<img class='plus' src='public/icons/pause.png'>";
+            audio.play();
+        } else {
+            document.getElementById("play").innerHTML="<img class='plus' src='public/icons/play.png'>";
+            audio.pause();
+        }
+        });
+    });
+    </script>
+    <script>
+        function get_date(){
+            var fecha = new Date();
+            var now = new Date();
+            var day = ("0" + now.getDate()).slice(-2);
+            var month = ("0" + (now.getMonth() + 1)).slice(-2);
+            var today = now.getFullYear()+"-"+(month)+"-"+(day) ;
+            console.log(today)
+            $('#creation_date').val(today);
+        }
+        function sololetras(e) {
+		var key = e.keyCode || e.which,
+			tecla = String.fromCharCode(key).toLowerCase(),
+			letras = " áéíóúabcdefghijklmnñopqrstuvwxyz",
+			especiales = [8, 37, 39, 46],
+			tecla_especial = false;
+
+		for (var i in especiales) {
+			if (key == especiales[i]) {
+				tecla_especial = true;
+				break;
+			}
+		}
+
+		if (letras.indexOf(tecla) == -1 && !tecla_especial) {
+			return false;
+		}
+    }
+    function solonumeros(a) {
+		var e = $("#" + a).val();
+		var reg = /^\d+$/;
+		if (!reg.test(e)) {
+			$("#" + a).val("");
+		}
+	}
+    </script> 
+    
+    <body>
+        <container>
+            <div class="first">
+                <nav class="principal">
+                    <m></m>
+                    <a href="#"><p>Atencion al Cliente</p></a>
+                    <a href="#s"><p>Promociones</p></a>
+                    <button><b>Cobertura</b></button>
+                    
+                </nav>
+
+                <i><img src="./public/images/redy_b.png"></i>
+                <nav></nav>
+                
+                
+                <img class=" img-principal d-block w-100" src="public/images/Grupo 4.png">
+                <h4>REDY</h4>
+                <h3>TE BRINDA</h3>
+                <h2><l>Más estabilidad</l></h2>
+                <h2><l2></l>Mayor capacidad</l2></h2>
+                <h2><l3>Alta disponivilidad</l3></h2> 
+                <div class="btn"><button>Servicio técnico</button></div>
+                <video class=" video-principal d-block w-100" src="public/sound/ICON_VERSION8_1.mp4" autoplay controls>  
+                
+                            
+            </div> 
+
+            <a name="s"></a>
+            <div class="second">
+
+                <img class=" img-principal d-block w-100" src="public/images/Mapa.png">
+                
+                <h4>Cobertura</h4>
+
+                
+                <h4>PROVEEMOS DE INTERNET EN:</h4>
+                <h3>LOJA</h3>
+                <p> Catamayo</p>
+                <p>El Cisne</p>
+                <p>San Pedro</p>
+                <p>Catacocha</p>
+                
+                <h3>ZAMORA CHINCHIPE</h3> 
+                <p>Yacuambi</p>
+                <p>Tutupali</p>
+                <a name="t"></a>
+                
+            </div>
+           
+            <div class="third">
+                <h3>Promociones</h3>
+                <center><h4>Clientes nuevos previa calificación</h4></center>
+                <p>100% de descuento en <b>instalación</b></p> 
+                <p>100% de descuento en tu <b>primer mes</b></p>
+                </br>
+                <center><h4>¡OFERTA EXCLUSIVA!</h4></center>
+                <p>Finaliza en <b><h>30 DÍAS</h></b></p> 
+            </div>
+            
+            <div class="fourth">
+                <img class=" img-1" src="public/images/Grupo 66.png">
+                <img class=" img-2" src="public/images/redy.png">
+                <h2>Innovamos para ti, mejoramos contigo</h2>
+                <div class="box">
+                    <h4>¡CONTRATA AQUI!</h4>
+                    <h3>TE LLAMAREMOS EN SEGUNDOS</h3>
+                </div> 
+                <button>CONTÁCTANOS AHORA</button>  
+                <a href=""><img class="img-3" src="public/images/Icon awesome-whatsapp@2x.png"></a>
+            </div>
+            
+            <div class="fifth">
+                <h3>FORMAS DE PAGO</h3>
+                </br>
+                <img class=" img-1" src="public/images/Diseño sin título (28).png">
+                <img class=" img-2" src="public/images/Enmascarar grupo 2.png">
+                <img class=" img-3" src="public/images/Enmascarar grupo 3.png">
+                <div class="texto">
+                    <p><b>Banco Pichincha:</b> con el código 43309</p>
+                    <p><b>Banca móvil o banca web Banco Pichincha.</b></p>
+                </div>
+                <img class=" img-4" src="public/images/Grupo 57.png">
+                <div class="texto">
+                    <p><b>Banca electrónica MegOnline de Coopmego:</b> con el número</p>
+                    <p>de cédula del titular del contrato.</p>
+                </div>
+                
+            </div>
+
+            <div class="formulario">
+                </br>
+                <h2>Preguntas o consultas</h2>
+                <div class="row">
+                    <p><input type="text" name="nombre" placeholder="Nombre"/></p>
+                    <p><input type="text" name="apellido" placeholder="Apellido"/></p>
+                    <p><input type="text" name="email" placeholder="Email"/></p>
+                    <p><input type="text" name="celular" placeholder="Celular"/></p>
+                    <p><input type="text" name="titular" placeholder="Nombre del titular de contrato"/></p>
+                    <p><input type="text" name="cedula" placeholder="Cedula"/></p>
+                </div>
+                <div class="row-2">
+                    <p><input type="text" name="nombre" placeholder="¿Con qué plan cuentas?"/></p>
+                    <p><input type="text" name="apellido" placeholder="¿Cual es tu pregunta?"/></p>
+                </div>
+                <div class="row-3">
+                    <input type="checkbox">    
+                    <h1>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</h1>
+                    <button>Enviar</button> 
+                </div>
+            </div>
+
+            <div class="font">
+                <h1></h1>
+                <h3></h3>
+                <h4></h4> 
+                <h5></h5>
+                <h6></h6>
+                <h7></h7>
+                <nav></nav>
+                <h2>Designed By Node</h2>
+            </div>
+            <a name="q"></a>
+            
+            
+            <div class="container-redes">
+                <div class="facebook">
+                    <a><img src="public/images/face.png"></a>
+                </div>
+                <div class="instagram">
+                    <a><img src="public/images/insta.png"></a>
+                </div>
+                <div class="whatsapp">
+                    <a><img src="public/images/whats.png"></a>
+                </div>
+            </div>
+        </container>
+    </body>
+</html>
